@@ -14,9 +14,11 @@ public class ComputerTester {
 			    new File("output.txt"), true /* true means append to file */))) {
 			output.println("\nTESTS FOR Person.java:");
 
-		//Copy all your lines above, add an extra "2" to every variable name
-		// and replace every System.out.print or System.out.println
-		// by output.print or output.println
+      SimpleDate ex12 = SimpleDate.of(2000, 1, 1);
+      SimpleDate ex22 = SimpleDate.of(2000, 1, 2);
+      SimpleDate ex32 = SimpleDate.of(2000, 1, 3);
+      output.println(ex22.before(ex12);)
+      output.println(ex22.before(ex32);)
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

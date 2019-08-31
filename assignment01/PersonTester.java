@@ -13,9 +13,10 @@ public class ComputerTester {
 			    new File("output.txt"), true /* true means append to file */))) {
 			output.println("\nTESTS FOR Person.java:");
 
-		//Copy all your lines above, add an extra "2" to every variable name
-		// and replace every System.out.print or System.out.println
-		// by output.print or output.println
+      DateAndPlaceOfBirth placeDob2 = new DateAndPlaceOfBirth(2000, 4, 11, "NYC", "NY", "USA");
+      StreetUSAddress address2 = new StreetUSAddress("110 Random St", "NYC", "NY", "11415");
+      Person aPerson2 = new Person("Elisha", "Aghajani", "123456789", placeDob2, address2;
+      output.println(aPerson2);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

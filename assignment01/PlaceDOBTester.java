@@ -26,9 +26,24 @@ public class ComputerTester {
 			    new File("output.txt"), true /* true means append to file */))) {
 			output.println("\nTESTS FOR DateAndPlaceOfBirth.java:");
 
-		//Copy all your lines above, add an extra "2" to every variable name
-		// and replace every System.out.print or System.out.println
-		// by output.print or output.println
+      DateAndPlaceOfBirth ex12 = new DateAndPlaceOfBirth(1990, 1, 1, "NYC", "NY", "USA");
+      DateAndPlaceOfBirth ex32 = new DateAndPlaceOfBirth(1990, 1, 1, "LA", "CA", "USA");
+      DateAndPlaceOfBirth ex22 = new DateAndPlaceOfBirth(1991, 1, 2, "Houston", "TX", "USA");
+      DateAndPlaceOfBirth ex42 = new DateAndPlaceOfBirth(1992, 1, 3, "London", "UK");
+      DateAndPlaceOfBirth ex52 = new DateAndPlaceOfBirth(1993, 1, 3, "Manchester", "Uk");
+      output.println(ex12);
+      output.println(ex22);
+      output.println(ex32);
+      output.println(ex42);
+      output.println(ex52);
+      output.println(ex1.hasSameBirthDateAs(ex22));
+      output.println(ex1.hasSameBirthDateAs(ex32));
+      output.println(ex1.hasSameBirthDayAs(ex22));
+      output.println(ex4.hasSameBirthDayAs(ex52));
+      output.println(ex1.youngerThan(ex32));
+      output.println(ex3.youngerThan(ex12));
+      output.println(ex4.olderThan(ex52));
+      try(var output =new PrintWriter(new FileO
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

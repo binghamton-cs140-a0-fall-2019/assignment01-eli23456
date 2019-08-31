@@ -13,9 +13,10 @@ public class ComputerTester {
 			    new File("output.txt"), true /* true means append to file */))) {
 			output.println("\nTESTS FOR StreetUSAddress.java:");
 
-		//Copy all your lines above, add an extra "2" to every variable name
-		// and replace every System.out.print or System.out.println
-		// by output.print or output.println
+      StreetUSAddress ex12 = new StreetUSAddress("123 Front St", "", "Binghamton", "NY", "13905");
+      StreetUSAddress ex22 = new StreetUSAddress("124 Front St", "AP 1B", "Binghamton", "NY", "13905");
+      output.println(ex12);
+      output.println(ex22);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}

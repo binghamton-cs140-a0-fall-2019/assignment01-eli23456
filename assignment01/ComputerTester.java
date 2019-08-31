@@ -17,9 +17,14 @@ public class ComputerTester {
 			    new File("output.txt"), true /* true means append to file */))) {
 			output.println("\nTESTS FOR Computer.java:");
 
-		//Copy all your lines above, add an extra "2" to every variable name
-		// and replace every System.out.print or System.out.println
-		// by output.print or output.println
+      Computer computer12 = new Computer("Apple", "i7", 8, 1500, true, 2000);
+      Computer computer22 = new Computer("Apple", "i7", 8, 1500, false, 2000);
+      Computer computer32 = new Computer("Apple", "i7", 8, 500, true, 2000);
+      Computer computer42 = new Computer("Apple", "i7", 8, 500, false, 2000);
+      output.println(computer12);
+      output.println(computer22);
+      output.println(computer32);
+      output.println(computer42);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
