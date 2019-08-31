@@ -16,8 +16,19 @@ package assignment01;
      returnValue.year = yr;
      returnValue.month = m;
      returnValue.day = d;
+     return returnValue;
    }
    public boolean before(SimpleDate other) {
-     return true;
+     if(this.year < other.getYear()){
+       return true;
+     }
+     else if(this.year == other.getYear() && this.month < other.getMonths()){
+       return true;
+     }
+     else if(this.year == other.getYear() && this.month == other.getMonths() && this.day < other.getDay()){
+       return true;
+     }
+     else{
+       return false;
    }
  }
